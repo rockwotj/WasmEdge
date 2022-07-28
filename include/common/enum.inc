@@ -47,6 +47,7 @@ A(Type_Limit, "limit")
 A(Type_Memory, "memory type")
 A(Type_Table, "table type")
 A(Type_Global, "global type")
+A(Type_Exception, "exception type")
 A(Expression, "expression")
 A(Instruction, "instruction")
 A(Sec_AOT, "aot section")
@@ -917,6 +918,7 @@ V(F64, 0x7C, "f64")
 V(V128, 0x7B, "v128")
 V(FuncRef, 0x70, "funcref")
 V(ExternRef, 0x6F, "externref")
+V(ExnRef, 0x6E, "exnref")
 
 #undef V
 #endif // UseValType
@@ -938,6 +940,7 @@ N(V128, 0x7B)
 
 R(FuncRef, 0x70)
 R(ExternRef, 0x6F)
+R(ExnRef, 0x6E)
 
 #undef R
 #endif // UseRefType
