@@ -200,7 +200,7 @@ if((WASMEDGE_LINK_LLVM_STATIC OR WASMEDGE_BUILD_STATIC_LIB) AND WASMEDGE_BUILD_A
       get_filename_component(ZLIB_PATH "${ZLIB_LIBRARIES}" DIRECTORY)
       list(APPEND WASMEDGE_LLVM_LINK_STATIC_COMPONENTS
         ${ZLIB_PATH}/libz.a
-        ${ZLIB_PATH}/libtinfo.a
+        # ${ZLIB_PATH}/libtinfo.a
       )
     else()
       # If not build static lib, dynamic link libz and libtinfo.
